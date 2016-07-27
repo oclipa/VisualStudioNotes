@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="SteveHall.NotesWindow.NotesWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             Background="{DynamicResource VsBrush.Window}"
+             Foreground="{DynamicResource VsBrush.WindowText}"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             Name="MyToolWindow">
+    <Grid x:Name="DialogGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open..." Name="OpenMenuItem" Click="Open_Click">
+                    <MenuItem.Icon>
+                        <Image Source="pack://application:,,,/Resources/open.ico" Stretch="Fill" Width="16"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Save" Name="SaveMenuItem" Click="Save_Click">
+                    <MenuItem.Icon>
+                        <Image Source="pack://application:,,,/Resources/save.ico"  Stretch="Fill" Width="16"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Save As..." Name="SaveAsMenuItem" Click="SaveAs_Click"/>
+                <MenuItem Header="Auto-save" Name="AutoSaveMenuItem" Click="AutoSave_Click" IsCheckable="True"/>
+            </MenuItem>
+        </Menu>
+
+        <Label Grid.Row="1" Name="AutoSaveLabel">Auto-save enabled...</Label>
+        <TextBox Grid.Row="2" Name="FilePathTextBox" IsReadOnly="True" ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+        <TextBox Grid.Row="3" Background="White"
+         BorderThickness="5"
+         IsReadOnly="False"
+         AcceptsReturn="True"       
+         TextWrapping="Wrap" 
+         VerticalScrollBarVisibility="Auto"
+         TextChanged="Notes_TextChanged"
+         Name="NotesTextBox"/>
+    </Grid>
+</UserControl>
