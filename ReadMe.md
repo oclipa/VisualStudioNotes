@@ -8,3 +8,4 @@ After building, run the following command to install the add-in (the vsix file c
 
 "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\VSIXInstaller.exe" NotesWindow.vsix
 
+Testing git branching...
