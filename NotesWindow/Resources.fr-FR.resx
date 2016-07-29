@@ -140,18 +140,18 @@
     <value>Notes</value>
   </data>
   <data name="AutoSaveMenuItem" xml:space="preserve">
-    <value>Auto-save</value>
+    <value>Enregistrer automatique</value>
   </data>
   <data name="FileMenu" xml:space="preserve">
-    <value>_File</value>
+    <value>_Fichier</value>
   </data>
   <data name="OpenMenuItem" xml:space="preserve">
-    <value>_Open...</value>
+    <value>_Ouvrir...</value>
   </data>
   <data name="SaveAsMenuItem" xml:space="preserve">
-    <value>Save as...</value>
+    <value>Enregistrer sous...</value>
   </data>
   <data name="SaveMenuItem" xml:space="preserve">
-    <value>_Save</value>
+    <value>_Enregistrer</value>
   </data>
 </root>

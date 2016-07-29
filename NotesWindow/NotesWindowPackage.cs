@@ -43,6 +43,7 @@ namespace SteveHall.NotesWindow
         /// </summary>
         public NotesWindowPackage()
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
             Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering constructor for: {0}", this.ToString()));
         }
 
