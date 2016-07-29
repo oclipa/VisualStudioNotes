@@ -22,7 +22,7 @@ namespace SteveHall.NotesWindow {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace SteveHall.NotesWindow {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SteveHall.NotesWindow.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace SteveHall.NotesWindow {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,18 @@ namespace SteveHall.NotesWindow {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Auto-save.
+        /// </summary>
+        public static string AutoSaveMenuItem {
+            get {
+                return ResourceManager.GetString("AutoSaveMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Can not create tool window..
         /// </summary>
-        internal static string CanNotCreateWindow {
+        public static string CanNotCreateWindow {
             get {
                 return ResourceManager.GetString("CanNotCreateWindow", resourceCulture);
             }
@@ -72,7 +81,7 @@ namespace SteveHall.NotesWindow {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon checkbox {
+        public static System.Drawing.Icon checkbox {
             get {
                 object obj = ResourceManager.GetObject("checkbox", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -82,7 +91,7 @@ namespace SteveHall.NotesWindow {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon checkbox_checked {
+        public static System.Drawing.Icon checkbox_checked {
             get {
                 object obj = ResourceManager.GetObject("checkbox_checked", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -90,9 +99,18 @@ namespace SteveHall.NotesWindow {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to _File.
+        /// </summary>
+        public static string FileMenu {
+            get {
+                return ResourceManager.GetString("FileMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon open {
+        public static System.Drawing.Icon open {
             get {
                 object obj = ResourceManager.GetObject("open", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -100,9 +118,18 @@ namespace SteveHall.NotesWindow {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to _Open....
+        /// </summary>
+        public static string OpenMenuItem {
+            get {
+                return ResourceManager.GetString("OpenMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon Package {
+        public static System.Drawing.Icon Package {
             get {
                 object obj = ResourceManager.GetObject("Package", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -112,7 +139,7 @@ namespace SteveHall.NotesWindow {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon save {
+        public static System.Drawing.Icon save {
             get {
                 object obj = ResourceManager.GetObject("save", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -120,9 +147,27 @@ namespace SteveHall.NotesWindow {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Save as....
+        /// </summary>
+        public static string SaveAsMenuItem {
+            get {
+                return ResourceManager.GetString("SaveAsMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Save.
+        /// </summary>
+        public static string SaveMenuItem {
+            get {
+                return ResourceManager.GetString("SaveMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Notes.
         /// </summary>
-        internal static string ToolWindowTitle {
+        public static string ToolWindowTitle {
             get {
                 return ResourceManager.GetString("ToolWindowTitle", resourceCulture);
             }
