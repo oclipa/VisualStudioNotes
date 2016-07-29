@@ -4,6 +4,7 @@
     <Identity Id="b5f01db8-5402-408b-a5bd-ec1133d30da5" Version="1.4.3" Language="en-US" Publisher="Steve Hall" />
     <DisplayName>Notes</DisplayName>
     <Description>This will add a Notes window to Visual Studio</Description>
+    <Icon>Package.ico</Icon>
   </Metadata>
   <Installation InstalledByMsi="false">
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
